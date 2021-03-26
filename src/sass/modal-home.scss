@@ -145,6 +145,83 @@
             }
         }
     }
+    @media screen and (max-width:800px){
+        width: 100%;
+        height: 430px;
+        &-content {
+            padding-top: 14%;
+            &_top {
+                @include modaContent('../images/bg-1.png', 204px, 85%);
+                background-size: contain;
+                h1 {
+                    font-size: 29px;
+                    strong {
+                        font-size: 34px;
+                        line-height: 37px;
+                        margin-left: 15%;
+                    }
+                }
+            }
+            &_bottom {
+                top: 33%;
+                @include modaContent('../images/bg-2.png', 219px, 85%);
+                background-size: contain;
+                &-body {
+                    top: 18%;
+                    &_inputs {
+                        label {
+                            font-size: 11px;
+                        }
+                        input {
+                            width: 157px;
+                            height: 26px;
+                            &:nth-of-type(2){
+                                margin: 12px 0;
+                            }
+                        }
+                    }
+                    &_btn {
+                        font-size: 11px;
+                        width: 139px;
+                        height: 28px;
+                    }
+                }
+            }
+        }
+        &_girl-left {
+            top: 32%;
+            left: 1%;
+            @include modaContent('../images/girl.png', 149px, 123px);
+            background-size: contain;
+        }
+        &-cupom {
+            &-content {
+                &_top {
+                    h1 {
+                        font-size: 26px;
+                        top: 23%;
+                        strong {
+                            font-size: 26px;
+                        }
+                    }
+                }
+                &_bottom {
+                    &_text {
+                        top: 11%;
+                        width: 80%;
+                        h2 {
+                            font-size: 14px;
+                        }
+                        .cupom {
+                            font-size: 14px;
+                            width: 145px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
 }
 
 
